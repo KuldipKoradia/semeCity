@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SEME CITY</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="images/favicon.png">
+</head>
+<body>
+	<header>
+		<div class="full_header_row">
+			<div class="logo_container">
+				<img src="images/logo.svg" alt="logo image">
+			</div>
+			<div class="language_container">
+				<div class="dropdown">
+					<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown">
+						<img src="images/flag_en.png" alt="flag image"> EN
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<li>
+							<a class="dropdown-item" href="javaScript:void(0);">
+								<img src="images/flag_en.png" alt="flag image"> EN
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="javaScript:void(0);">
+								<img src="images/flag_en.png" alt="flag image"> EN
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="javaScript:void(0);">
+								<img src="images/flag_en.png" alt="flag image"> EN
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="javaScript:void(0);">
+								<img src="images/flag_en.png" alt="flag image"> EN
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="sign_in_form_section">
+		<div class="custom_container">
+			<div class="back_button">
+				<a href="#">
+					<img src="images/back.svg" alt="back_arrow">
+					Retour
+				</a>
+			</div>
+		</div>
+		<div class="custom_container sign_in_outter">
+			<div class="sign_in_form_container">
+				<div class="sign_in_form_body">
+					<h3>Sign in to your account</h3>
+					<form id="signInForm" method="get" action="">
+						<div class="single_input_design_gray">
+							<label class="form_label">E-mail</label>
+							<input required class="form_input_gray" type="email" name="sign_in_email" placeholder="exemple@mail.com">
+						</div>
+						<div class="single_input_design_gray">
+							<label class="form_label">Mot de passe</label>
+							<span class="pass_hide_show">
+								<img src="images/eye.svg" alt="eye icon">
+							</span>
+							<input required class="form_input_gray" type="password" name="sign_in_password" placeholder="********">
+						</div>
+						<div class="forgot_pass">
+							<a href="#">Mot de passe oublié ?</a>
+						</div>
+						<div class="form_submit_button_or_reset">
+							<button type="submit" class="btn submit_button">Se connecter</button>
+						</div>
+					</form>
+				</div>
+				<div class="sign_in_form_footer">
+					<p>Vous n’avez pas de compte ? <a href="sign-up.html">Créer un compte</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script src="js/custom.js"></script>
+
+	<script>
+		$("#signInForm").validate({
+			rules: {
+				sign_in_email: {
+					required: true,
+					email: true
+				},
+				sign_in_password: {
+					required: true
+				}
+			},
+			messages: {
+				sign_in_email: {
+					required: "This field is required",
+					email: "Please enter a valid email address"
+				},
+				sign_in_password: "This field is required",
+			}
+		});
+	</script>
+</body>
+</html>

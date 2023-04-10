@@ -1,0 +1,1008 @@
+/*common css start*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins&display=swap');
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Bold.eot');
+    src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gotham-Bold.woff2') format('woff2'),
+    url('../fonts/Gotham-Bold.woff') format('woff'),
+    url('../fonts/Gotham-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body, h1, h2, h3, h4, h5, h6, ul, li, p, a, span {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -font-smoothing: antialiased;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAFDFD;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+}
+body:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background-image: url(../images/logo_bg.png);
+    z-index: -1;
+    width: 273px;
+    height: 232px;
+}
+a, button, input[type=submit], select {
+    cursor: pointer;
+}
+a, a:hover, a:focus, 
+button, button:hover, button:focus,
+input, input:hover, input:focus, 
+textarea, textarea:hover, textarea:focus,
+select, select:hover, select:focus{
+    outline: 0;
+    box-shadow: none;
+    text-decoration: none;
+}
+ul, ol, li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.custom_container {
+    width: 100%;
+    max-width: 1088px;
+    padding-right: 24px;
+    padding-left: 24px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.single_input_design_gray {
+    position: relative;
+}
+.form_input_gray {
+    font-size: 16px;
+    line-height: 24px;
+    color: #191C1D;
+    padding: 0px 16px;
+    height: 56px;
+    width: 100%;
+    background: #EFF1F1;
+    border: 2px solid transparent;
+}
+.form_input_gray:focus {
+    border-color: #004C99;
+}
+label.form_label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #42474E;
+    margin: 16px 0px 8px;
+}
+label.form_label span.required_mark {
+    color: #DA1E28;
+}
+input.form_input_gray[type="password"] {
+    padding-right: 72px;
+}
+.pass_hide_show {
+    position: absolute;
+    top: 42px;
+    right: 2px;
+    height: 52px;
+    width: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+.pass_hide_show.show:before {
+    content: "/";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #191c1d;
+}
+.form_input_gray::-webkit-input-placeholder {
+  color: #191C1D;
+}
+.form_input_gray:-ms-input-placeholder {
+  color: #191C1D;
+}
+.form_input_gray::placeholder {
+  color: #191C1D;
+}
+.form_submit_button_or_reset .submit_button {
+    padding: 0px 16px;
+    width: 100%;
+    height: 56px;
+    background-color: #004C99;
+    border-radius: 0px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 2px solid #004C99;
+}
+.form_submit_button_or_reset .to_log_in_btn {
+    padding: 0px 16px;
+    width: 100%;
+    height: 56px;
+    background-color: transparent;
+    border-radius: 0px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #004C99;
+    border: 2px solid #004C99;
+}
+label.error {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #DA1E28;
+    margin: 8px 0px 0px;
+    display: block;
+}
+/*common css end*/
+
+
+/*header css start*/
+header {
+    background-color: #ffffff;
+}
+.full_header_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    max-width: 1088px;
+    margin: auto;
+}
+.dropdown-menu {
+    padding: 5px;
+    margin: 0;
+    width: auto;
+    min-width: auto;
+    left: auto !important;
+    right: 0;
+}
+.dropdown-menu li .dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    font-family: 'DM Sans', sans-serif;
+}
+.dropdown-menu li .dropdown-item img {
+    max-width: 20px;
+    margin-right: 10px;
+}
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #014D98;
+    background-color: transparent !important;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin-left: auto;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.dropdown-toggle img {
+    max-width: 20px;
+    margin-right: 10px;
+}
+/*header css end*/
+
+/*back button css start*/
+.back_button {
+    padding: 40px 0px;
+}
+.back_button a {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #42474E;
+    position: relative;
+    z-index: 1;
+}
+.back_button a img {
+    margin-right: 10px;
+    max-width: 16px;
+    max-height: 16px;
+}
+/*back button css end*/
+
+/*sign in form css start*/
+.sign_in_outter {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+.sign_in_form_body h3 {
+    font-family: 'Gotham';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+    color: #313F41;
+    margin-bottom: 8px;
+}
+.sign_in_form_container {
+    display: block;
+    width: 100%;
+    max-width: 512px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(68, 82, 82, 0.3);
+    margin: auto;
+}
+.sign_in_form_container .sign_in_form_body {
+    padding: 24px;
+}
+.sign_in_form_container .sign_in_form_footer {
+    padding: 16px;
+    background: #EFF1F1;
+    text-align: center;
+}
+.sign_in_form_container .sign_in_form_footer p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #545454;
+}
+.sign_in_form_container .sign_in_form_footer p a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    color: #004C99;
+}
+.forgot_pass {
+    text-align: right;
+    margin: 16px 0px;
+}
+.forgot_pass a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: inherit;
+    text-transform: uppercase;
+    color: #004C99;
+}
+/*sign in form css end*/
+
+/*welcome section css start*/
+.welcome_outter {
+    position: relative;
+    top: -64px;
+    max-width: 704px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.custom_container.welcome_outter{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.welcome_outter .custom_row {
+    display: flex;
+    margin-left: -8px;
+    margin-right: -8px;
+    flex-wrap: wrap;
+}
+.welcome_outter .custom_col_12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.welcome_outter .custom_col_6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: 50%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.welcome_content {
+    text-align: center;
+}
+.welcome_content h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+.welcome_content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #002245;
+    margin-bottom: 32px;
+}
+
+.acc_type_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 8px;
+    background: #FFFFFF;
+    border: 2px solid #E6F3FF;
+    border-radius: 24px;
+    text-align: center;
+}
+.acc_type_card img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 24px;
+}
+.acc_type_card h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #42474E;
+    margin-bottom: 8px;
+}
+.acc_type_card p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #191C1D;
+}
+/*welcome section css end*/
+
+
+
+
+/*select2 css start*/
+.select2.select2-container {
+    width: 100% !important;
+}
+
+.select2-selection--single {
+    display: table !important;
+    width: 100%;
+}
+.select2-selection--single .select2-selection__rendered {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    color: #191C1D !important;
+    padding: 14px 40px 14px 16px !important;
+    height: 56px !important;
+    width: 100% !important;
+    background: #FFFFFF !important;
+    border: 2px solid transparent !important;
+    border-bottom-color: #5C5F5F !important;
+    background-image: url(../images/down.svg) !important;
+    background-position: center right 16px !important;
+    background-repeat: no-repeat !important;
+    display: table !important;
+}
+.select2-selection--single:focus .select2-selection__rendered {
+    border-bottom-color: #004C99 !important;
+}
+.select2-selection--single .select2-selection__arrow {
+    display: none !important;
+}
+.select2-selection--multiple {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    position: relative !important;
+}
+.select2.select2-container .selection .select2-selection {
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    padding: 0px !important;
+}
+.select2-selection--multiple span.select2-search textarea {
+    font-size: 16px !important;
+    line-height: 24px;
+    color: #191C1D;
+    padding: 16px 40px 16px 16px !important;
+    height: 56px !important;
+    width: 100% !important;
+    background: #FFFFFF !important;
+    border: 2px solid transparent !important;
+    border-bottom-color: #5C5F5F !important;
+    margin: 0px 0px 16px !important;
+    background-image: url(../images/down.svg) !important;
+    background-position: center right 16px !important;
+    background-repeat: no-repeat !important;
+}
+.select2-selection__rendered {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center;
+}
+.select2-selection--multiple .select2-selection__rendered:before {
+    content: "Sélectionnés";
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #42474E;
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+.select2-selection__rendered li {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    align-items: center;
+    padding: 2px 16px !important;
+    height: auto !important;
+    background: rgba(200, 219, 237, 0.5) !important;
+    border-radius: 4px !important;
+    border: none !important;
+    margin: 0px 12px 16px 0px !important;
+}
+.select2-selection__rendered li .select2-selection__choice__remove {
+    position: relative !important;
+    border: none !important;
+    background: transparent !important;
+    color: #002F64 !important;
+    font-size: 24px !important;
+    padding: 0px 5px !important;
+}
+.select2-selection__rendered li .select2-selection__choice__display{
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    color: #191C1D !important;
+    padding: 0px 5px !important;
+}
+.option_dropdown_container .select2-container {
+    top: 108px !important;
+}
+.option_dropdown_container .select2-container .select2-dropdown {
+    border: none !important;
+    border-radius: 0 !important;
+    background: #FFFFFF !important;
+    box-shadow: 0px 3px 5px rgba(49, 63, 65, 0.15), 0px 0px 1px rgba(49, 63, 65, 0.05) !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+}
+.option_dropdown_container .select2-results__options::-webkit-scrollbar {
+  width: 0px;
+}
+.option_dropdown_container .select2-results__options::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.option_dropdown_container .select2-results__options::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.option_dropdown_container .select2-results__options::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.option_dropdown_container .select2-results__options {
+    max-height: 120px !important;
+}
+.option_dropdown_container .select2-results__options li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 12px 40px 12px 16px !important;
+    color: #5C5F5F !important;
+    background-color: #FFFFFF !important;
+    background-image: url(../images/radio.svg) !important;
+    background-position: center right 16px !important;
+    background-repeat: no-repeat !important;
+}
+.option_dropdown_container .select2-results__options li.select2-results__option--selected {
+    background-color: #E8F1FF !important;
+    background-image: url(../images/radio_selected.svg) !important;
+    background-position: center right 16px !important;
+    background-repeat: no-repeat !important;
+}
+.option_dropdown_container .select2-results__options li.select2-results__option.select2-results__message {
+    background-image: none !important;
+    text-align: center;
+}
+/*select2 css end*/
+
+/*form side content css start*/
+.form_personnel, .form_entreprise, .form_common {
+    padding-bottom: 110px;
+}
+.form_personnel .custom_container, .form_entreprise .custom_container, .form_common .custom_container {
+    padding-right: 52px;
+    padding-left: 52px;
+    max-width: 1144px;
+}
+.form_personnel .custom_row, .form_entreprise .custom_row, .form_common .custom_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -52px;
+    margin-left: -52px;
+}
+.form_personnel .custom_col_5, .form_entreprise .custom_col_5, .form_common .custom_col_5 {
+    padding-right: 52px;
+    padding-left: 52px;
+    flex: 0 0 46%;
+    max-width: 46%;
+}
+.form_personnel .custom_col_7, .form_entreprise .custom_col_7, .form_common .custom_col_7 {
+    padding-right: 52px;
+    padding-left: 52px;
+    flex: 0 0 54%;
+    max-width: 54%;
+}
+
+.form_side_content h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    color: #191C1D;
+}
+.form_side_content h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #191C1D;
+    margin-top: 40px;
+}
+.form_side_content ul {
+    margin-top: 8px;
+}
+.form_side_content ul li {
+    margin-top: 32px;
+    padding-left: 40px;
+    position: relative;
+}
+.form_side_content ul li:after {
+    content: "";
+    background-image: url(../images/bullet.svg);
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    left: 0px;
+    top: 4px;
+}
+.form_side_content ul li h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #42474E;
+}
+.form_side_content ul li p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #191C1D;
+    margin-top: 16px;
+}
+.form_side_content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #191C1D;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+.form_personnel .form_submit_button_or_reset, .form_entreprise .form_submit_button_or_reset, .form_common .form_submit_button_or_reset {
+    margin-top: 24px;
+}
+h5.form_title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #42474E;
+    margin-top: 40px;
+}
+.form_personnel label.form_label, .form_entreprise label.form_label, .form_common label.form_label {
+    margin-top: 24px;
+}
+.hide_desktop {
+    display: none;
+}
+.hide_mobile {
+    display: block;
+}
+
+.form_personnel.step_one {
+    position: relative;
+    top: -64px;
+}
+.form_side_content h2.hide_desktop + h3 {
+    margin-top: 64px;
+}
+.form_personnel .pass_hide_show,
+.form_entreprise .pass_hide_show {
+    top: 50px;
+}
+
+.custom_form_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.custom_form_col_6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.custom_form_col_12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.custom_checkbox {
+    padding: 24px 0px 0px;
+}
+.custom_checkbox input[type="checkbox"] {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+}
+.custom_checkbox input[type="checkbox"] + label.form_label {
+    margin: 0px;
+    padding-left: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #42474E;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+.custom_checkbox input[type="checkbox"] + label.form_label:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 24px;
+    width: 24px;
+    border: 1.5px solid #42474E;
+    border-radius: 4px;
+}
+.custom_checkbox input[type="checkbox"]:checked + label.form_label:after {
+    background-image: url(../images/checkbox_check.svg);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.confidential {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    color: #004C99;
+    margin-left: 40px;
+    margin-top: 16px;
+    display: table;
+}
+
+.personnel_step_two form, .common_step_three form {
+    background-color: #F2F9FF;
+    border-radius: 8px;
+    padding: 0px 16px 24px;
+    margin: 0px -8px;
+}
+
+.custom_checkbox_list {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.custom_checkbox_list input[type="checkbox"] {
+    display: none;
+}
+.custom_checkbox_list input[type="checkbox"] + label {
+    margin: 0px 12px 12px 0px !important;
+    height: 40px;
+    border: 2px solid #C8DBED;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #191C1D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.custom_checkbox_list input[type="checkbox"] + label:last-child {
+    margin-right: 0px !important;
+}
+.custom_checkbox_list input[type="checkbox"]:checked + label {
+    background-color: rgba(200, 219, 237, 0.5);
+}
+/*form side content css end*/
+
+
+
+
+/*responsive css start*/
+@media (max-width: 1365px) {
+    .sign_in_outter {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .form_personnel, .form_entreprise, .form_common {
+        padding-bottom: 70px;
+    }
+    .form_personnel .custom_container,
+    .form_entreprise .custom_container,
+    .form_common .custom_container {
+        padding-right: 24px;
+        padding-left: 24px;
+        max-width: 1088px;
+    }
+    .form_personnel .custom_row,
+    .form_entreprise .custom_row,
+    .form_common .custom_row {
+        margin-right: -24px;
+        margin-left: -24px;
+    }
+    .form_personnel .custom_col_5,
+    .form_entreprise .custom_col_5,
+    .form_common .custom_col_5 {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+    .form_personnel .custom_col_7,
+    .form_entreprise .custom_col_7,
+    .form_common .custom_col_7 {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+}
+@media (max-width: 991px) {
+    body:after {
+        display: none;
+    }
+    .pass_hide_show {
+        height: 32px;
+        width: 32px;
+    }
+    .form_personnel .pass_hide_show,
+    .form_entreprise .pass_hide_show {
+        top: 42px;
+    }
+    input.form_input_gray[type="password"] {
+        padding-right: 48px;
+    }
+    .form_input_gray {
+        height: 36px;
+    }
+    .back_button {
+        padding: 20px 0px;
+    }
+    .custom_container {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    .sign_in_outter {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .full_header_row {
+        padding: 16px;
+    }
+    .logo_container img {
+        max-height: 26px;
+    }
+    .sign_in_form_container .sign_in_form_body {
+        padding: 24px 16px;
+    }
+    .welcome_outter {
+        top: 0px;
+    }
+    .form_personnel.step_one {
+        top: 0;
+    }
+    .form_side_content h2.hide_desktop + h3 {
+        margin-top: 0px;
+    }
+    .select2-selection--single .select2-selection__rendered,
+    .select2-selection--multiple span.select2-search textarea {
+        padding: 4px 40px 4px 16px !important;
+        height: 36px !important;
+    }
+    .option_dropdown_container .select2-container {
+        top: 80px !important;
+    }
+    .form_personnel, .form_entreprise, .form_common {
+        padding-bottom: 50px;
+    }
+    .form_personnel .custom_container,
+    .form_entreprise .custom_container,
+    .form_common .custom_container {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    .form_personnel .custom_row,
+    .form_entreprise .custom_row,
+    .form_common .custom_row {
+        margin-right: -16px;
+        margin-left: -16px;
+    }
+    .form_personnel .custom_col_5,
+    .form_entreprise .custom_col_5,
+    .form_common .custom_col_5 {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    .form_personnel .custom_col_7,
+    .form_entreprise .custom_col_7,
+    .form_common .custom_col_7 {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    .form_side_content h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .form_side_content h3 {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 24px;
+    }
+    .form_side_content ul {
+        margin-top: 0px;
+        margin-bottom: 24px;
+    }
+    .form_side_content ul li {
+        margin-top: 16px;
+    }
+    .form_side_content ul li h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .form_side_content ul li p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 8px;
+    }
+    .form_side_content p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 8px;
+    }
+    .form_personnel label.form_label, .form_entreprise label.form_label, .form_common label.form_label {
+        margin-top: 16px;
+    }
+    .form_personnel .form_submit_button_or_reset, .form_entreprise .form_submit_button_or_reset, .form_common .form_submit_button_or_reset {
+        margin-top: 16px;
+    }
+    .personnel_step_two form, .common_step_three form {
+        padding: 0px 16px 16px;
+    }
+}
+@media (max-width: 767px) {
+    .custom_container.welcome_outter {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .welcome_outter .custom_row {
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+    .welcome_outter .custom_col_12, .welcome_outter .custom_col_6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .acc_type_card {
+        margin: 10px 0px;
+    }
+    .form_personnel .custom_col_5,
+    .form_entreprise .custom_col_5,
+    .form_common .custom_col_5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .form_personnel .custom_col_7,
+    .form_entreprise .custom_col_7,
+    .form_common .custom_col_7 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .custom_form_col_6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    h5.form_title {
+        margin-top: 24px;
+    }
+    .hide_desktop {
+        display: block;
+    }
+    .hide_mobile {
+        display: none;
+    }
+    .form_side_content h2.hide_desktop + h3 {
+        margin-top: 24px;
+    }
+}
+@media (max-width: 575px) {
+    .sign_in_outter {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .sign_in_form_body h3 {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 0px;
+    }
+    .forgot_pass a {
+        font-size: 10px;
+    }
+    .sign_in_form_container .sign_in_form_footer p {
+        font-size: 12px;
+    }
+    .sign_in_form_container .sign_in_form_footer p a {
+        font-size: 10px;
+    }
+    .welcome_content {
+        text-align: left;
+    }
+    .welcome_content h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .welcome_content p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 8px;
+    }
+    .acc_type_card img {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 16px;
+    }
+    .acc_type_card h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .acc_type_card p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .form_personnel {
+        padding-bottom: 30px;
+    }
+}
+/*responsive css end*/

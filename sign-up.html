@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SEME CITY</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="images/favicon.png">
+</head>
+<body>
+	<header>
+		<div class="full_header_row">
+			<div class="logo_container">
+				<img src="images/logo.svg" alt="logo image">
+			</div>
+			<div class="language_container">
+				<div class="dropdown">
+					<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown">
+						<img src="images/flag_en.png" alt="flag image"> EN
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<li>
+							<a class="dropdown-item" href="javaScript:void(0);">
+								<img src="images/flag_en.png" alt="flag image"> EN
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="javaScript:void(0);">
+								<img src="images/flag_en.png" alt="flag image"> EN
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="javaScript:void(0);">
+								<img src="images/flag_en.png" alt="flag image"> EN
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="javaScript:void(0);">
+								<img src="images/flag_en.png" alt="flag image"> EN
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="sign_up_form_section">
+		<div class="custom_container">
+			<div class="back_button">
+				<a href="javaScript:void(0);">
+					<img src="images/back.svg" alt="back_arrow">
+					Retour
+				</a>
+			</div>
+		</div>
+
+		<!-- welcome screen start -->
+		<div class="custom_container welcome_outter" id="welcome_step" style="">
+			<div class="custom_row">
+				<div class="custom_col_12">
+					<div class="welcome_content">
+						<h3>Bienvenue sur le portail e-seme</h3>
+						<p>Créer un compte pour vous, votre entreprise ou un organisme que vous représentez !</p>
+					</div>
+				</div>
+				<div class="custom_col_6">
+					<a href="javaScript:void(0);" id="personnel" class="acc_type_card">
+						<img src="images/personal.svg" alt="icon image">
+						<h4>Compte personnel</h4>
+						<p>Des entrepreneurs aux profils et au parcours variés font confiance à My SemeCity.</p>
+					</a>
+				</div>
+				<div class="custom_col_6">
+					<a href="javaScript:void(0);" id="entreprise" class="acc_type_card">
+						<img src="images/enterprise.svg" alt="icon image">
+						<h4>Compte entreprise</h4>
+						<p>Des startups ambitieuses et des entreprises de toutes tailles font confiance à My SemeCity.</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- welcome screen end -->
+
+		<!-- entreprise form step one start -->
+		<div class="form_entreprise step_one" id="entreprise_one" style="display: none;">
+			<div class="custom_container">
+				<div class="custom_row">
+					<div class="custom_col_5">
+						<div class="form_side_content">
+							<h2>Créez votre compte My SemeCity</h2>
+							<h3>Pourquoi rejoindre l’espace My SemeCity ?</h3>
+							<ul class="bullet_points">
+								<li>
+									<h4>Une communauté mixte</h4>
+									<p>Des startups ambitieuses et des entreprises de toutes tailles font confiance à My SemeCity.</p>
+								</li>
+								<li>
+									<h4>Des contenus personnalisés</h4>
+									<p>Des startups ambitieuses et des entreprises de toutes tailles font confiance à My SemeCity.</p>
+								</li>
+								<li>
+									<h4>Suivez des formations diverses</h4>
+									<p>Des startups ambitieuses et des entreprises de toutes tailles font confiance à My SemeCity.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="custom_col_7">
+						<div class="entreprise_step_one">
+							<form id="entreprise_form_step_one" method="get" action="">
+								<div class="custom_form_row">
+									<div class="custom_form_col_12">
+										<h5 class="form_title" style="margin-top: 0px;">Informations de mon entreprise</h5>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Nom de la Société / Nom de l’institution <span class="required_mark">*</span></label>
+											<input required class="form_input_gray" type="text" name="e_company_name">
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Comment voulez-vous authentifiez votre entreprise <span class="required_mark">*</span></label>
+											<div class="option_dropdown_container one"></div>
+											<select required class="custom_select one" name="e_authenticate_business">
+												<option value="Identifiant Fiscal Unique (IFU)">
+													Identifiant Fiscal Unique (IFU)
+												</option>
+												<option value="Autres (RCCM ou Référence Fiscale)">
+													Autres (RCCM ou Référence Fiscale)
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Entrez votre Identifiant Fiscal Unique (IFU) ici <span class="required_mark">*</span></label>
+											<input required class="form_input_gray" type="text" name="e_unique_tax_id">
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Quel est votre secteur d’activité</label>
+											<div class="option_dropdown_container two"></div>
+											<select class="custom_select two" name="e_activity_sector">
+												<option value="E-agriculture">
+													E-agriculture
+												</option>
+												<option value="E-agriculture2">
+													E-agriculture2
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<h5 class="form_title">Adresse de l’entreprise</h5>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Pays <span class="required_mark">*</span></label>
+											<div class="option_dropdown_container three"></div>
+											<select required class="custom_select three" name="e_pays">
+												<option value="Bénin">
+													Bénin
+												</option>
+												<option value="Bénin2">
+													Bénin2
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Ville <span class="required_mark">*</span></label>
+											<input required class="form_input_gray" type="text" name="e_ville">
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Adresse <span class="required_mark">*</span></label>
+											<input required class="form_input_gray" type="text" name="e_adresses">
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Complément d'adresse</label>
+											<input class="form_input_gray" type="text" name="e_additional_address">
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="form_submit_button_or_reset">
+											<button type="button" class="btn submit_button">Créer un compte</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- entreprise form step one end -->
+
+		<!-- entreprise form step two start -->
+		<div class="form_entreprise step_two" id="entreprise_two" style="display: none;">
+			<div class="custom_container">
+				<div class="custom_row">
+					<div class="custom_col_5">
+						<div class="form_side_content">
+							<h3 style="margin-top: 0px;">Parlez-nous de vous</h3>
+							<p>Ne vous inquiétez pas, nous veillerons à ce que vous ne manquiez rien.</p>
+						</div>
+					</div>
+					<div class="custom_col_7">
+						<div class="entreprise_step_two">
+							<form id="entreprise_form_step_two" method="get" action="">
+								<div class="custom_form_row">
+									<div class="custom_form_col_12">
+										<h5 class="form_title" style="margin-top: 0px;">Informations du compte administrateur du profil entreprise</h5>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Nom de l’administrateur du compte <span class="required_mark">*</span></label>
+											<input required class="form_input_gray" type="text" name="e_administrator_fname">
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Prénom de l’administrateur du compte <span class="required_mark">*</span></label>
+											<input required class="form_input_gray" type="text" name="e_administrator_lname">
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Quel poste occupez-vous au sein de l’entreprise ?</label>
+											<div class="option_dropdown_container five"></div>
+											<select required class="custom_select five" name="e_position_in_company">
+												<option value="Gérant">
+													Gérant
+												</option>
+												<option value="Gérant2">
+													Gérant2
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Email professionnel <span class="required_mark">*</span></label>
+											<input required class="form_input_gray" type="email" name="e_email_professional">
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<h5 class="form_title">Sécurisez votre compte entreprise</h5>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Mot de passe <span class="required_mark">*</span></label>
+											<span class="pass_hide_show">
+												<img src="images/eye.svg" alt="eye icon">
+											</span>
+											<input required class="form_input_gray" type="password" id="e_entreprise_pass" name="e_entreprise_pass" placeholder="********">
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Confirmer le mot de passe <span class="required_mark">*</span></label>
+											<span class="pass_hide_show">
+												<img src="images/eye.svg" alt="eye icon">
+											</span>
+											<input required class="form_input_gray" type="password" id="e_entreprise_c_pass" name="e_entreprise_c_pass" placeholder="********">
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="custom_checkbox">
+											<input name="e_i_agree" type="checkbox" id="e_i_agree" required>
+											<label class="form_label" for="e_i_agree">I Agree to e-seme Terms and Privacy Policy</label>
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="custom_checkbox">
+											<input name="e_rec_email" type="checkbox" id="e_rec_email">
+											<label class="form_label" for="e_rec_email">Recevoir des e-mails de My SemeCity sur les actualités relatives aux produits et événements du secteur. Si vous changez d'avis, vous pouvez vous désabonner à tout moment. </label>
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<a class="confidential" href="#">Politique de confidentialité</a>
+									</div>
+									<div class="custom_form_col_6">
+										<div class="form_submit_button_or_reset">
+											<button type="button" class="btn to_log_in_btn">Annuler</button>
+										</div>
+									</div>
+									<div class="custom_form_col_6">
+										<div class="form_submit_button_or_reset">
+											<button type="button" class="btn submit_button">Continuer</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- entreprise form step two end -->
+
+
+		<!-- personnel form step one start -->
+		<div class="form_personnel step_one" id="personnel_one" style="display: none;">
+			<div class="custom_container">
+				<div class="custom_row">
+					<div class="custom_col_5">
+						<div class="form_side_content">
+							<h2 class="hide_desktop">Créez votre compte My SemeCity</h2>
+							<h3>Pourquoi rejoindre l’espace My SemeCity ?</h3>
+							<ul class="bullet_points">
+								<li>
+									<h4>Une communauté mixte</h4>
+									<p>Des startups ambitieuses et des entreprises de toutes tailles font confiance à My SemeCity.</p>
+								</li>
+								<li>
+									<h4>Des contenus personnalisés</h4>
+									<p>Des startups ambitieuses et des entreprises de toutes tailles font confiance à My SemeCity.</p>
+								</li>
+								<li>
+									<h4>Suivez des formations diverses</h4>
+									<p>Des startups ambitieuses et des entreprises de toutes tailles font confiance à My SemeCity.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="custom_col_7">
+						<div class="form_side_content">
+							<h2 class="hide_mobile">Créez votre compte My SemeCity</h2>
+						</div>
+						<div class="personnel_step_one">
+							<form id="personnel_form_step_one" method="get" action="">
+								<div class="custom_form_row">
+									<div class="custom_form_col_6">
+										<div class="single_input_design_gray">
+											<label class="form_label">Nom <span class="required_mark">*</span></label>
+											<input required class="form_input_gray" type="text" name="p_fname">
+										</div>
+									</div>
+									<div class="custom_form_col_6">
+										<div class="single_input_design_gray">
+											<label class="form_label">Prénom <span class="required_mark">*</span></label>
+											<input required class="form_input_gray" type="text" name="p_lname">
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Email <span class="required_mark">*</span></label>
+											<input required class="form_input_gray" type="email" name="p_email">
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Mot de passe <span class="required_mark">*</span></label>
+											<span class="pass_hide_show">
+												<img src="images/eye.svg" alt="eye icon">
+											</span>
+											<input required class="form_input_gray" type="password" name="p_password" id="p_password" placeholder="********">
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Confirmer le mot de passe <span class="required_mark">*</span></label>
+											<span class="pass_hide_show">
+												<img src="images/eye.svg" alt="eye icon">
+											</span>
+											<input required class="form_input_gray" type="password" name="p_c_password" id="p_c_password" placeholder="********">
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="custom_checkbox">
+											<input name="p_i_agree" type="checkbox" id="p_i_agree" required>
+											<label class="form_label" for="p_i_agree">I Agree to e-seme Terms and Privacy Policy</label>
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="custom_checkbox">
+											<input name="p_rec_email" type="checkbox" id="p_rec_email">
+											<label class="form_label" for="p_rec_email">Recevoir des e-mails de My SemeCity sur les actualités relatives aux produits et événements du secteur. Si vous changez d'avis, vous pouvez vous désabonner à tout moment. </label>
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<a class="confidential" href="#">Politique de confidentialité</a>
+									</div>
+									<div class="custom_form_col_6">
+										<div class="form_submit_button_or_reset">
+											<button type="button" class="btn to_log_in_btn">Se connecter</button>
+										</div>
+									</div>
+									<div class="custom_form_col_6">
+										<div class="form_submit_button_or_reset">
+											<button type="button" class="btn submit_button">Continuer</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- personnel form step one end -->
+
+		<!-- personnel form step two start -->
+		<div class="form_personnel step_two" id="personnel_two" style="display: none;">
+			<div class="custom_container">
+				<div class="custom_row">
+					<div class="custom_col_5">
+						<div class="form_side_content">
+							<h3 style="margin-top: 0px;">Parlez-nous de vous</h3>
+							<p>Ne vous inquiétez pas, nous veillerons à ce que vous ne manquiez rien.</p>
+						</div>
+					</div>
+					<div class="custom_col_7">
+						<div class="personnel_step_two">
+							<form id="personnel_form_step_two" method="get" action="">
+								<div class="custom_form_row">
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Quel est votre profil</label>
+											<div class="option_dropdown_container six"></div>
+											<select required class="custom_select six" name="p_profile_type">
+												<option value="Entrepreneur">
+													Entrepreneur
+												</option>
+												<option value="Entrepreneur2">
+													Entrepreneur2
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Quel est votre secteur d’activité</label>
+											<div class="option_dropdown_container seven"></div>
+											<select required class="custom_select seven" name="p_activity_sector">
+												<option value="E-agriculture">
+													E-agriculture
+												</option>
+												<option value="E-agriculture2">
+													E-agriculture2
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Quel est le nom de l’entreprise ?</label>
+											<input required class="form_input_gray" type="text" name="p_company_name" placeholder="Input text">
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Quel poste occupez-vous</label>
+											<div class="option_dropdown_container eight"></div>
+											<select required class="custom_select eight" name="p_position_in_company">
+												<option value="Gérant">
+													Gérant
+												</option>
+												<option value="Gérant2">
+													Gérant2
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Dans quelle région du monde êtes-vous</label>
+											<div class="option_dropdown_container nine"></div>
+											<select required class="custom_select nine" name="p_pays">
+												<option value="Cotonou, Bénin, Afrique francophone">
+													Cotonou, Bénin, Afrique francophone
+												</option>
+												<option value="Cotonou, Bénin, Afrique francophone2">
+													Cotonou, Bénin, Afrique francophone2
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="form_submit_button_or_reset">
+											<button type="button" class="btn submit_button">Continuer</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- personnel form step two end -->
+
+
+		<!-- common form step three start -->
+		<div class="form_common step_three" id="common_three" style="display: none;">
+			<div class="custom_container">
+				<div class="custom_row">
+					<div class="custom_col_5">
+						<div class="form_side_content">
+							<h3 style="margin-top: 0px;">Quels sont les sujets qui vous intéressent</h3>
+							<p>Ne vous inquiétez pas, nous veillerons à ce que vous ne manquiez rien.</p>
+						</div>
+					</div>
+					<div class="custom_col_7">
+						<div class="common_step_three">
+							<form>
+								<div class="custom_form_row">
+									<div class="custom_form_col_12">
+										<div class="single_input_design_gray">
+											<label class="form_label">Renseignez un centre d’interet</label>
+											<div class="option_dropdown_container six"></div>
+											<div class="option_dropdown_container multi_select"></div>
+											<select id="multi_select" class="custom_multi_select" name="center_of_interest" multiple="multiple">
+												<option value="1">Option 1</option>
+												<option value="2">Option 2</option>
+												<option value="3">Option 3</option>
+												<option value="4">Option 4</option>
+												<option value="1">Option 1</option>
+												<option value="2">Option 2</option>
+												<option value="3">Option 3</option>
+												<option value="4">Option 4</option>
+												<option value="1">Option 1</option>
+												<option value="2">Option 2</option>
+												<option value="3">Option 3</option>
+												<option value="4">Option 4</option>
+											</select>
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<h5 class="form_title" style="margin-top: 24px;">Suggestions</h5>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="custom_checkbox_list">
+											<input type="checkbox" name="suggestions" id="innovation">
+											<label for="innovation">Innovation</label>
+											<input type="checkbox" name="suggestions" id="industries">
+											<label for="industries">Industries</label>
+											<input type="checkbox" name="suggestions" id="créativités">
+											<label for="créativités">Créativités</label>
+											<input type="checkbox" name="suggestions" id="smart_cities">
+											<label for="smart_cities">Smart cities</label>
+										</div>
+									</div>
+									<div class="custom_form_col_12">
+										<div class="form_submit_button_or_reset">
+											<button type="submit" class="btn submit_button">Terminé</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- common form step two end -->
+	</section>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/additional-methods.min.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script src="js/custom.js"></script>
+
+
+	<script>
+		$("#entreprise_form_step_one").validate({
+			rules: {
+				e_company_name: {
+					required: true,
+				},
+				e_authenticate_business: {
+					required: true,
+				},
+				e_unique_tax_id: {
+					required: true,
+				},
+				e_pays: {
+					required: true,
+				},
+				e_ville: {
+					required: true,
+				},
+				e_adresses: {
+					required: true,
+				}
+			},
+			messages: {
+				e_company_name: "This field is required",
+				e_authenticate_business: "This field is required",
+				e_unique_tax_id: "This field is required",
+				e_pays: "This field is required",
+				e_ville: "This field is required",
+				e_adresses: "This field is required",
+			}
+		});
+
+
+		$("#entreprise_form_step_two").validate({
+			rules: {
+				e_administrator_fname: {
+					required: true,
+				},
+				e_administrator_lname: {
+					required: true,
+				},
+				e_email_professional: {
+					required: true,
+					email: true
+				},
+				e_entreprise_pass: {
+					required: true,
+					minlength: 8
+				},
+				e_entreprise_c_pass: {
+					required: true,
+					minlength: 8,
+					equalTo: "#e_entreprise_pass",
+				},
+				e_i_agree: {
+					required: true
+				}
+			},
+			messages: {
+				e_administrator_fname: "This field is required",
+				e_administrator_lname: "This field is required",
+				e_email_professional: {
+					required: "This field is required",
+					email: "Please enter a valid email address"
+				},
+				e_entreprise_pass: {
+					required: "Password is required",
+					minlength: "Your password must be at least 8 characters long"
+				},
+				e_entreprise_c_pass: {
+					required: "Password is required",
+					minlength: "Your password must be at least 8 characters long",
+					equalTo: "Please enter the same password as above"
+				},
+				e_i_agree: "You have to agree Terms and Privacy Policy",
+			},
+			errorPlacement: function(error, element) {
+				if(element.attr("name") == "e_i_agree") {
+					error.insertAfter(element.parent());
+				} else {
+					error.insertAfter(element);
+				}
+			}
+		});
+
+
+		$("#personnel_form_step_one").validate({
+			rules: {
+				p_fname: {
+					required: true,
+				},
+				p_lname: {
+					required: true,
+				},
+				p_email: {
+					required: true,
+					email: true
+				},
+				p_password: {
+					required: true,
+					minlength: 8
+				},
+				p_c_password: {
+					required: true,
+					minlength: 8,
+					equalTo: "#p_password",
+				},
+				p_i_agree: {
+					required: true
+				}
+			},
+			messages: {
+				p_fname: "This field is required",
+				p_lname: "This field is required",
+				p_email: {
+					required: "This field is required",
+					email: "Please enter a valid email address"
+				},
+				p_password: {
+					required: "Password is required",
+					minlength: "Your password must be at least 8 characters long"
+				},
+				p_c_password: {
+					required: "Password is required",
+					minlength: "Your password must be at least 8 characters long",
+					equalTo: "Please enter the same password as above"
+				},
+				p_i_agree: "You have to agree Terms and Privacy Policy",
+			},
+			errorPlacement: function(error, element) {
+				if(element.attr("name") == "p_i_agree") {
+					error.insertAfter(element.parent());
+				} else {
+					error.insertAfter(element);
+				}
+			}
+		});
+
+
+		$("#personnel").click(function(){
+			$("#welcome_step").hide().addClass('previousSection');
+			$("#personnel_one").show().addClass('activeSection');
+		});
+		$("#entreprise").click(function(){
+			$("#welcome_step").hide().addClass('previousSection');
+			$("#entreprise_one").show().addClass('activeSection');
+		});
+
+
+		$("#personnel_form_step_one .submit_button").click(function(){
+			$("#personnel_form_step_one").valid();
+			if($("#personnel_form_step_one").valid() === true) {
+				$("#welcome_step").removeClass('previousSection');
+				$("#personnel_one").hide().removeClass('activeSection').addClass('previousSection');
+				$("#personnel_two").show().addClass('activeSection');
+			}
+		});
+		$("#personnel_form_step_two .submit_button").click(function(){
+			$("#personnel_one").removeClass('previousSection');
+			$("#personnel_two").hide().removeClass('activeSection').addClass('previousSection');
+			$("#common_three").show().addClass('activeSection');
+		});
+
+
+		$("#entreprise_form_step_one .submit_button").click(function(){
+			$("#entreprise_form_step_one").valid();
+			if($("#entreprise_form_step_one").valid() === true) {
+				$("#welcome_step").removeClass('previousSection');
+				$("#entreprise_one").hide().removeClass('activeSection').addClass('previousSection');
+				$("#entreprise_two").show().addClass('activeSection');
+			}
+		});
+		$("#entreprise_form_step_two .submit_button").click(function(){
+			if($("#entreprise_form_step_two").valid() === true) {
+				$("#entreprise_one").removeClass('previousSection');
+				$("#entreprise_two").hide().removeClass('activeSection').addClass('previousSection');
+				$("#common_three").show().addClass('activeSection');
+			}
+		});
+
+		$(".back_button a").click(function(){
+
+			if($("#personnel_one").hasClass('activeSection')) {
+				$("#welcome_step").show().removeClass('previousSection');
+				$("#personnel_one").hide().removeClass('activeSection');
+			}
+
+			else if($("#personnel_two").hasClass('activeSection')) {
+				$("#welcome_step").addClass('previousSection');
+				$("#personnel_one").show().removeClass('previousSection').addClass('activeSection');
+				$("#personnel_two").hide().removeClass('activeSection');
+			}
+
+			else if($("#common_three").hasClass('activeSection') && $("#personnel_two").hasClass('previousSection')) {
+				$("#personnel_one").addClass('previousSection');
+				$("#personnel_two").show().removeClass('previousSection').addClass('activeSection');
+				$("#common_three").hide().removeClass('activeSection');
+			}
+
+			else if($("#entreprise_one").hasClass('activeSection')) {
+				$("#welcome_step").show().removeClass('previousSection');
+				$("#entreprise_one").hide().removeClass('activeSection');
+			}
+
+			else if($("#entreprise_two").hasClass('activeSection')) {
+				$("#welcome_step").addClass('previousSection');
+				$("#entreprise_one").show().removeClass('previousSection').addClass('activeSection');
+				$("#entreprise_two").hide().removeClass('activeSection');
+			}
+
+			else if($("#common_three").hasClass('activeSection') && $("#entreprise_two").hasClass('previousSection')) {
+				$("#entreprise_one").addClass('previousSection');
+				$("#entreprise_two").show().removeClass('previousSection').addClass('activeSection');
+				$("#common_three").hide().removeClass('activeSection');
+			}
+		});
+	</script>
+</body>
+</html>
