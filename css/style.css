@@ -712,7 +712,7 @@ h5.form_title {
     display: table;
 }
 
-.personnel_step_two form, .common_step_three form {
+.personnel_step_two form, .personnel_step_three form, .entreprise_step_three form {
     background-color: #F2F9FF;
     border-radius: 8px;
     padding: 0px 16px 24px;
@@ -905,7 +905,7 @@ h5.form_title {
     .form_personnel .form_submit_button_or_reset, .form_entreprise .form_submit_button_or_reset, .form_common .form_submit_button_or_reset {
         margin-top: 16px;
     }
-    .personnel_step_two form, .common_step_three form {
+    .personnel_step_two form, .personnel_step_three form, .entreprise_step_three form {
         padding: 0px 16px 16px;
     }
 }
