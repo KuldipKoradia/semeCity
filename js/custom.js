@@ -58,8 +58,12 @@ $(document).ready(function(){
 	});
 
 
-	$('#multi_select').select2({
-		dropdownParent: $('.option_dropdown_container.multi_select'),
+	$('#multi_select_entreprise').select2({
+		dropdownParent: $('.option_dropdown_container.multi_option_entreprise'),
+		closeOnSelect: false,
+	});
+	$('#multi_select_personnel').select2({
+		dropdownParent: $('.option_dropdown_container.multi_option_personnel'),
 		closeOnSelect: false,
 	});
 });
