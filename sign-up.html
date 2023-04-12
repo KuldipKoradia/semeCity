@@ -124,15 +124,17 @@
 									<div class="custom_form_col_12">
 										<div class="single_input_design_gray">
 											<label class="form_label">Comment voulez-vous authentifiez votre entreprise <span class="required_mark">*</span></label>
-											<div class="option_dropdown_container one"></div>
-											<select required class="custom_select one" name="e_authenticate_business">
-												<option value="Identifiant Fiscal Unique (IFU)">
-													Identifiant Fiscal Unique (IFU)
-												</option>
-												<option value="Autres (RCCM ou Référence Fiscale)">
-													Autres (RCCM ou Référence Fiscale)
-												</option>
-											</select>
+											<div class="custom_select_container">
+												<div class="option_dropdown_container one"></div>
+												<select required class="custom_select one" name="e_authenticate_business">
+													<option value="Identifiant Fiscal Unique (IFU)">
+														Identifiant Fiscal Unique (IFU)
+													</option>
+													<option value="Autres (RCCM ou Référence Fiscale)">
+														Autres (RCCM ou Référence Fiscale)
+													</option>
+												</select>
+											</div>
 										</div>
 									</div>
 									<div class="custom_form_col_12">
@@ -144,15 +146,17 @@
 									<div class="custom_form_col_12">
 										<div class="single_input_design_gray">
 											<label class="form_label">Quel est votre secteur d’activité</label>
-											<div class="option_dropdown_container two"></div>
-											<select class="custom_select two" name="e_activity_sector">
-												<option value="E-agriculture">
-													E-agriculture
-												</option>
-												<option value="E-agriculture2">
-													E-agriculture2
-												</option>
-											</select>
+											<div class="custom_select_container">
+												<div class="option_dropdown_container two"></div>
+												<select class="custom_select two" name="e_activity_sector">
+													<option value="E-agriculture">
+														E-agriculture
+													</option>
+													<option value="E-agriculture2">
+														E-agriculture2
+													</option>
+												</select>
+											</div>
 										</div>
 									</div>
 									<div class="custom_form_col_12">
@@ -161,15 +165,17 @@
 									<div class="custom_form_col_12">
 										<div class="single_input_design_gray">
 											<label class="form_label">Pays <span class="required_mark">*</span></label>
-											<div class="option_dropdown_container three"></div>
-											<select required class="custom_select three" name="e_pays">
-												<option value="Bénin">
-													Bénin
-												</option>
-												<option value="Bénin2">
-													Bénin2
-												</option>
-											</select>
+											<div class="custom_select_container">
+												<div class="option_dropdown_container three"></div>
+												<select required class="custom_select three" name="e_pays">
+													<option value="Bénin">
+														Bénin
+													</option>
+													<option value="Bénin2">
+														Bénin2
+													</option>
+												</select>
+											</div>
 										</div>
 									</div>
 									<div class="custom_form_col_12">
@@ -236,15 +242,17 @@
 									<div class="custom_form_col_12">
 										<div class="single_input_design_gray">
 											<label class="form_label">Quel poste occupez-vous au sein de l’entreprise ?</label>
-											<div class="option_dropdown_container five"></div>
-											<select required class="custom_select five" name="e_position_in_company">
-												<option value="Gérant">
-													Gérant
-												</option>
-												<option value="Gérant2">
-													Gérant2
-												</option>
-											</select>
+											<div class="custom_select_container">
+												<div class="option_dropdown_container five"></div>
+												<select required class="custom_select five" name="e_position_in_company">
+													<option value="Gérant">
+														Gérant
+													</option>
+													<option value="Gérant2">
+														Gérant2
+													</option>
+												</select>
+											</div>
 										</div>
 									</div>
 									<div class="custom_form_col_12">
@@ -343,22 +351,23 @@
 									<div class="custom_form_col_12">
 										<div class="single_input_design_gray">
 											<label class="form_label">Renseignez un centre d’interet</label>
-											<div class="option_dropdown_container six"></div>
-											<div class="option_dropdown_container multi_option_entreprise"></div>
-											<select id="multi_select_entreprise" class="custom_multi_select" name="e_center_of_interest" multiple="multiple">
-												<option value="1">Option 1</option>
-												<option value="2">Option 2</option>
-												<option value="3">Option 3</option>
-												<option value="4">Option 4</option>
-												<option value="1">Option 1</option>
-												<option value="2">Option 2</option>
-												<option value="3">Option 3</option>
-												<option value="4">Option 4</option>
-												<option value="1">Option 1</option>
-												<option value="2">Option 2</option>
-												<option value="3">Option 3</option>
-												<option value="4">Option 4</option>
-											</select>
+											<div class="custom_select_container">
+												<div class="option_dropdown_container multi_option_entreprise"></div>
+												<select id="multi_select_entreprise" class="custom_multi_select" name="e_center_of_interest" multiple="multiple">
+													<option value="1">Option 1</option>
+													<option value="2">Option 2</option>
+													<option value="3">Option 3</option>
+													<option value="4">Option 4</option>
+													<option value="1">Option 1</option>
+													<option value="2">Option 2</option>
+													<option value="3">Option 3</option>
+													<option value="4">Option 4</option>
+													<option value="1">Option 1</option>
+													<option value="2">Option 2</option>
+													<option value="3">Option 3</option>
+													<option value="4">Option 4</option>
+												</select>
+											</div>
 										</div>
 									</div>
 									<div class="custom_form_col_12">
@@ -509,29 +518,33 @@
 									<div class="custom_form_col_12">
 										<div class="single_input_design_gray">
 											<label class="form_label">Quel est votre profil</label>
-											<div class="option_dropdown_container six"></div>
-											<select required class="custom_select six" name="p_profile_type">
-												<option value="Entrepreneur">
-													Entrepreneur
-												</option>
-												<option value="Entrepreneur2">
-													Entrepreneur2
-												</option>
-											</select>
+											<div class="custom_select_container">
+												<div class="option_dropdown_container six"></div>
+												<select required class="custom_select six" name="p_profile_type">
+													<option value="Entrepreneur">
+														Entrepreneur
+													</option>
+													<option value="Entrepreneur2">
+														Entrepreneur2
+													</option>
+												</select>
+											</div>
 										</div>
 									</div>
 									<div class="custom_form_col_12">
 										<div class="single_input_design_gray">
 											<label class="form_label">Quel est votre secteur d’activité</label>
-											<div class="option_dropdown_container seven"></div>
-											<select required class="custom_select seven" name="p_activity_sector">
-												<option value="E-agriculture">
-													E-agriculture
-												</option>
-												<option value="E-agriculture2">
-													E-agriculture2
-												</option>
-											</select>
+											<div class="custom_select_container">
+												<div class="option_dropdown_container seven"></div>
+												<select required class="custom_select seven" name="p_activity_sector">
+													<option value="E-agriculture">
+														E-agriculture
+													</option>
+													<option value="E-agriculture2">
+														E-agriculture2
+													</option>
+												</select>
+											</div>
 										</div>
 									</div>
 									<div class="custom_form_col_12">
@@ -543,29 +556,33 @@
 									<div class="custom_form_col_12">
 										<div class="single_input_design_gray">
 											<label class="form_label">Quel poste occupez-vous</label>
-											<div class="option_dropdown_container eight"></div>
-											<select required class="custom_select eight" name="p_position_in_company">
-												<option value="Gérant">
-													Gérant
-												</option>
-												<option value="Gérant2">
-													Gérant2
-												</option>
-											</select>
+											<div class="custom_select_container">
+												<div class="option_dropdown_container eight"></div>
+												<select required class="custom_select eight" name="p_position_in_company">
+													<option value="Gérant">
+														Gérant
+													</option>
+													<option value="Gérant2">
+														Gérant2
+													</option>
+												</select>
+											</div>
 										</div>
 									</div>
 									<div class="custom_form_col_12">
 										<div class="single_input_design_gray">
 											<label class="form_label">Dans quelle région du monde êtes-vous</label>
-											<div class="option_dropdown_container nine"></div>
-											<select required class="custom_select nine" name="p_pays">
-												<option value="Cotonou, Bénin, Afrique francophone">
-													Cotonou, Bénin, Afrique francophone
-												</option>
-												<option value="Cotonou, Bénin, Afrique francophone2">
-													Cotonou, Bénin, Afrique francophone2
-												</option>
-											</select>
+											<div class="custom_select_container">
+												<div class="option_dropdown_container nine"></div>
+												<select required class="custom_select nine" name="p_pays">
+													<option value="Cotonou, Bénin, Afrique francophone">
+														Cotonou, Bénin, Afrique francophone
+													</option>
+													<option value="Cotonou, Bénin, Afrique francophone2">
+														Cotonou, Bénin, Afrique francophone2
+													</option>
+												</select>
+											</div>
 										</div>
 									</div>
 									<div class="custom_form_col_12">
@@ -614,22 +631,23 @@
 									<div class="custom_form_col_12">
 										<div class="single_input_design_gray">
 											<label class="form_label">Renseignez un centre d’interet</label>
-											<div class="option_dropdown_container six"></div>
-											<div class="option_dropdown_container multi_option_personnel"></div>
-											<select id="multi_select_personnel" class="custom_multi_select" name="p_center_of_interest" multiple="multiple">
-												<option value="1">Option 1</option>
-												<option value="2">Option 2</option>
-												<option value="3">Option 3</option>
-												<option value="4">Option 4</option>
-												<option value="1">Option 1</option>
-												<option value="2">Option 2</option>
-												<option value="3">Option 3</option>
-												<option value="4">Option 4</option>
-												<option value="1">Option 1</option>
-												<option value="2">Option 2</option>
-												<option value="3">Option 3</option>
-												<option value="4">Option 4</option>
-											</select>
+											<div class="custom_select_container">
+												<div class="option_dropdown_container multi_option_personnel"></div>
+												<select id="multi_select_personnel" class="custom_multi_select" name="p_center_of_interest" multiple="multiple">
+													<option value="1">Option 1</option>
+													<option value="2">Option 2</option>
+													<option value="3">Option 3</option>
+													<option value="4">Option 4</option>
+													<option value="1">Option 1</option>
+													<option value="2">Option 2</option>
+													<option value="3">Option 3</option>
+													<option value="4">Option 4</option>
+													<option value="1">Option 1</option>
+													<option value="2">Option 2</option>
+													<option value="3">Option 3</option>
+													<option value="4">Option 4</option>
+												</select>
+											</div>
 										</div>
 									</div>
 									<div class="custom_form_col_12">
@@ -670,8 +688,6 @@
 	<script src="js/additional-methods.min.js"></script>
 	<script src="js/select2.min.js"></script>
 	<script src="js/custom.js"></script>
-
-
 	<script>
 		$("#entreprise_form_step_one").validate({
 			rules: {

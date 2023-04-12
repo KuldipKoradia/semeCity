@@ -68,7 +68,7 @@ img{
     margin-right: auto;
     margin-left: auto;
 }
-.single_input_design_gray {
+.single_input_design_gray, .custom_select_container {
     position: relative;
 }
 .form_input_gray {
@@ -126,13 +126,13 @@ input.form_input_gray[type="password"] {
     color: #191c1d;
 }
 .form_input_gray::-webkit-input-placeholder {
-  color: #191C1D;
+    color: #191C1D;
 }
 .form_input_gray:-ms-input-placeholder {
-  color: #191C1D;
+    color: #191C1D;
 }
 .form_input_gray::placeholder {
-  color: #191C1D;
+    color: #191C1D;
 }
 .form_submit_button_or_reset .submit_button {
     padding: 0px 16px;
@@ -408,7 +408,7 @@ header {
     background-image: url(../images/down.svg) !important;
     background-position: center right 16px !important;
     background-repeat: no-repeat !important;
-    display: table !important;
+    white-space: normal !important;
 }
 .select2-selection--single:focus .select2-selection__rendered {
     border-bottom-color: #004C99 !important;
@@ -477,7 +477,7 @@ header {
     font-size: 24px !important;
     padding: 0px 5px !important;
 }
-.select2-selection__rendered li .select2-selection__choice__display{
+.select2-selection__rendered li .select2-selection__choice__display {
     font-weight: 400;
     font-size: 14px !important;
     line-height: 20px !important;
@@ -485,7 +485,7 @@ header {
     padding: 0px 5px !important;
 }
 .option_dropdown_container .select2-container {
-    top: 108px !important;
+    top: 58px !important;
 }
 .option_dropdown_container .select2-container .select2-dropdown {
     border: none !important;
@@ -496,16 +496,16 @@ header {
     overflow: hidden !important;
 }
 .option_dropdown_container .select2-results__options::-webkit-scrollbar {
-  width: 0px;
+    width: 0px;
 }
 .option_dropdown_container .select2-results__options::-webkit-scrollbar-track {
-  background: #f1f1f1;
+    background: #f1f1f1;
 }
 .option_dropdown_container .select2-results__options::-webkit-scrollbar-thumb {
-  background: #888;
+    background: #888;
 }
 .option_dropdown_container .select2-results__options::-webkit-scrollbar-thumb:hover {
-  background: #555;
+    background: #555;
 }
 .option_dropdown_container .select2-results__options {
     max-height: 120px !important;
@@ -840,7 +840,7 @@ h5.form_title {
         height: 36px !important;
     }
     .option_dropdown_container .select2-container {
-        top: 80px !important;
+        top: 38px !important;
     }
     .form_personnel, .form_entreprise, .form_common {
         padding-bottom: 50px;
