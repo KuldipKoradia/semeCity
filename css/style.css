@@ -246,8 +246,12 @@ header {
 
 /*sign in form css start*/
 .sign_in_outter {
-    padding-top: 110px;
-    padding-bottom: 110px;
+    padding-top: 10px;
+    padding-bottom: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 200px);
 }
 .sign_in_form_body h3 {
     font-family: 'Gotham';
@@ -754,10 +758,6 @@ h5.form_title {
 
 /*responsive css start*/
 @media (max-width: 1365px) {
-    .sign_in_outter {
-        padding-top: 70px;
-        padding-bottom: 70px;
-    }
     .form_personnel, .form_entreprise, .form_common {
         padding-bottom: 70px;
     }
@@ -808,13 +808,13 @@ h5.form_title {
     .back_button {
         padding: 20px 0px;
     }
+    .sign_in_outter {
+        min-height: calc(100vh - 132px);
+        padding-bottom: 64px;
+    }
     .custom_container {
         padding-right: 16px;
         padding-left: 16px;
-    }
-    .sign_in_outter {
-        padding-top: 50px;
-        padding-bottom: 50px;
     }
     .full_header_row {
         padding: 16px;
@@ -958,10 +958,6 @@ h5.form_title {
     }
 }
 @media (max-width: 575px) {
-    .sign_in_outter {
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
     .sign_in_form_body h3 {
         font-size: 16px;
         line-height: 24px;
