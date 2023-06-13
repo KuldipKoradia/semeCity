@@ -123,10 +123,10 @@
 									</div>
 									<div class="custom_form_col_12">
 										<div class="single_input_design_gray">
-											<label class="form_label">Comment voulez-vous authentifiez votre entreprise <span class="required_mark">*</span></label>
+											<label class="form_label">Comment voulez-vous authentifiez votre entreprise</label>
 											<div class="custom_select_container">
 												<div class="option_dropdown_container one"></div>
-												<select required class="custom_select one" name="e_authenticate_business">
+												<select required class="custom_select one" name="e_authenticate_business" onchange="getval(this);">
 													<option value="Identifiant Fiscal Unique (IFU)">
 														Identifiant Fiscal Unique (IFU)
 													</option>
@@ -139,7 +139,8 @@
 									</div>
 									<div class="custom_form_col_12">
 										<div class="single_input_design_gray">
-											<label class="form_label">Entrez votre Identifiant Fiscal Unique (IFU) ici <span class="required_mark">*</span></label>
+											<label id="IFU" class="form_label">Entrez votre Identifiant Fiscal Unique (IFU) ici</label>
+											<label id="RCCM" class="form_label" style="display: none;">Entrez votre RCCM ou Référence Fiscale ici</label>
 											<input required class="form_input_gray" type="text" name="e_unique_tax_id">
 										</div>
 									</div>
@@ -482,14 +483,14 @@
 									<div class="custom_form_col_12">
 										<a class="confidential" href="#">Politique de confidentialité</a>
 									</div>
-									<div class="custom_form_col_6">
+									<!-- <div class="custom_form_col_6">
 										<div class="form_submit_button_or_reset">
 											<button type="button" class="btn to_log_in_btn">Se connecter</button>
 										</div>
-									</div>
-									<div class="custom_form_col_6">
+									</div> -->
+									<div class="custom_form_col_12">
 										<div class="form_submit_button_or_reset">
-											<button type="button" class="btn submit_button">Continuer</button>
+											<button type="button" class="btn submit_button">CREATE ACCOUNT</button>
 										</div>
 									</div>
 								</div>
@@ -689,15 +690,23 @@
 	<script src="js/select2.min.js"></script>
 	<script src="js/custom.js"></script>
 	<script>
+
+		function getval(sel)
+		{
+			if(sel.value == "Identifiant Fiscal Unique (IFU)") {
+				$("#IFU").show();
+				$("#RCCM").hide();
+			} else if (sel.value == "Autres (RCCM ou Référence Fiscale)") {
+				$("#IFU").hide();
+				$("#RCCM").show();
+			}
+		}
+
+
+		
 		$("#entreprise_form_step_one").validate({
 			rules: {
 				e_company_name: {
-					required: true,
-				},
-				e_authenticate_business: {
-					required: true,
-				},
-				e_unique_tax_id: {
 					required: true,
 				},
 				e_pays: {
@@ -712,8 +721,6 @@
 			},
 			messages: {
 				e_company_name: "This field is required",
-				e_authenticate_business: "This field is required",
-				e_unique_tax_id: "This field is required",
 				e_pays: "This field is required",
 				e_ville: "This field is required",
 				e_adresses: "This field is required",

@@ -226,7 +226,7 @@ header {
     padding: 40px 0px;
 }
 .back_button a {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     font-style: normal;
     font-weight: 500;
@@ -365,6 +365,10 @@ header {
     border: 2px solid #E6F3FF;
     border-radius: 24px;
     text-align: center;
+    transition: all 0.5s;
+}
+.acc_type_card:hover {
+    border-color: #014D98;
 }
 .acc_type_card img {
     width: 120px;
